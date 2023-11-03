@@ -23,7 +23,7 @@ const About = () => {
   return (
     <div ref={Aboutref} className='flex flex-col justify-center gap-10 '>
          <h1 className='relative uppercase font-bold text-5xl max-sm:mb-10 max-sm:text-4xl'>ganta <span className='text-[#E36858] max-sm:ml-[15%] max-sm:absolute -bottom-[40px] right-0'>subramanyam</span></h1>
-         <p className='text-lg leading-8 text-justify text-gray-700 indent-[200px]'>Iam a Passionate Full stack web developer with a strong dedication to creating beautiful, functional, and user-friendly responsive websites. So iam looking for an oppurtunity to start my career as a web developer to use and enhance my skills as a professional .
+         <p className='text-xl leading-8 text-justify text-gray-700 indent-[200px]'>Iam a Passionate Full stack web developer with a strong dedication to creating beautiful, functional, and user-friendly responsive websites. So iam looking for an oppurtunity to start my career as a web developer to use and enhance my skills as a professional .
          Feel free to explore my portfolio to see diverse range of projects i have created .
          </p>
          <div className=' flex gap-10 justify-center'>

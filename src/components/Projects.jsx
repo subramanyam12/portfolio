@@ -11,7 +11,7 @@ const Projects = () => {
       let child = Projectref.current.getBoundingClientRect()
       if(child.top>-1000 && child.top<=200 && child.bottom >=0){
         sethighlight('Projects')
-      }else if(child.top<-500 && child.bottom <450){
+      }else if(child.top<-500 && child.bottom <700){
         sethighlight('Contact')
       }
     })
@@ -40,7 +40,7 @@ const Projects = () => {
     {
       name:'Image-editor',
       img:'imagefilter.jpeg',
-      description:"Its created in react by using this application we can add filters to images like contrast,blur,brightness,saturation\
+      description:"Its created in react by using this application we can add filters to images like contrast ,blur ,brightness ,saturation\
       and also we can rotate images ,then after filtering we can download the edited Image.",
       url:'https://subramanyam12.github.io/imagefilter'
     },
@@ -75,8 +75,12 @@ const Projects = () => {
           <h1 className='text-gray-700 text-2xl font-bold mb-3'>{name}</h1>
           <div className='flex max-sm:flex-col-reverse max-sm:gap-5 justify-between items-center'>
             <div className='text-gray-700 h-[20vh] max-sm:h-auto flex flex-col max-sm:gap-2 justify-evenly text-lg max-sm:text-[17px]'>
-               <p className='w-[50vw] text-justify indent-40 max-sm:w-full'>{description}</p>
-               <div className='flex font-semibold max-sm:text-base items-center gap-2 '><TbWorldWww className='max-sm:text-xl' /> <a href={url} target='_blank'>{ url}</a></div>
+               <p className='w-[50vw]  indent-40 text-justify max-sm:w-full'>{description}</p>
+               <div className='flex font-semibold max-sm:text-base items-center gap-2 '>
+                 <TbWorldWww />
+                 <a href={url} className='max-sm:hidden block' target='_blank'>{ url}</a>
+                 <a href={url} className='max-sm:block hidden' target='_blank'>{url.length>34 ? `${url.substring(0,34)}...`: url}</a>
+                </div>
             </div>
             <img className='rounded-2xl outline-2 outline-double outline-gray-400 shadow-lg object-cover w-[22vw] max-sm:w-[90vw] h-[12vw] max-sm:h-[50vw]' src={img} alt="" />
           </div>
