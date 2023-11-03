@@ -1,4 +1,4 @@
-import React,{useRef,useEffect,useContext, useState} from 'react'
+import React,{useRef,useEffect,useContext} from 'react'
 import About from './About'
 import Education from './Education'
 import Skills from './Skills'
@@ -15,7 +15,7 @@ const Content = () => {
     const child=Contentref.current.children[scroll]
     child.scrollIntoView({ behavior: 'smooth',block:scroll===3 ?'start':'center'})
   },[scroll])
-  
+
   return (
     <div ref={Contentref} className='w-[80%] max-sm:w-full pt-[30vh] max-sm:pt-[20vh] overflow-y-auto content-scroll font-serif flex flex-col gap-20 px-10 max-sm:pl-4 max-sm:pr-3 bg-[#f1d9ca]'>
        <About />

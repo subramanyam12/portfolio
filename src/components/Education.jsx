@@ -9,7 +9,6 @@ const Education = () => {
   useEffect(()=>{
     Educationref.current.parentNode.addEventListener('scroll',()=>{
       let child = Educationref.current.getBoundingClientRect()
-      // console.log(child.top,child.bottom);
       if(child.top<=200 && child.bottom >=0){
         sethighlight('Education')
       }else if(child.top>400 && child.bottom>1000){

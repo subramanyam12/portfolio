@@ -9,7 +9,6 @@ const Projects = () => {
   useEffect(()=>{
     Projectref.current.parentNode.addEventListener('scroll',()=>{
       let child = Projectref.current.getBoundingClientRect()
-      // console.log(child.top,child.bottom);
       if(child.top>-1000 && child.top<=200 && child.bottom >=0){
         sethighlight('Projects')
       }else if(child.top<-500 && child.bottom <450){

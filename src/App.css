@@ -1,8 +1,4 @@
 
-:root{
-  --clr:#B7B9A8, #D1B5A3, #E36858, #0C0D0D;
-}
-
 .asset{
   accent-color:rgb(0, 68, 255);
 }
@@ -24,6 +20,7 @@
 .menuanimation {
   transition:height 500ms ease-out;
 }
+
 .menuanimation > :is(.image,nav){
   transition:opacity 400ms ease-out;
 }
