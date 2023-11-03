@@ -76,11 +76,11 @@ const Projects = () => {
           <div className='flex max-sm:flex-col-reverse max-sm:gap-5 justify-between items-center'>
             <div className='text-gray-700 h-[20vh] max-sm:h-auto flex flex-col max-sm:gap-2 justify-evenly text-lg max-sm:text-[17px]'>
                <p className='w-[50vw] text-justify indent-40 max-sm:w-full'>{description}</p>
-               <div className='flex font-semibold max-sm:text-base items-center gap-2'><TbWorldWww className='max-sm:text-xl' /> <a href={url} className='' target='_blank'>{url.length > 35 ? `${url.substring(0,35)}...` : url}</a></div>
+               <div className='flex font-semibold max-sm:text-base items-center gap-2 '><TbWorldWww className='max-sm:text-xl' /> <a href={url} target='_blank'>{ url}</a></div>
             </div>
             <img className='rounded-2xl outline-2 outline-double outline-gray-400 shadow-lg object-cover w-[22vw] max-sm:w-[90vw] h-[12vw] max-sm:h-[50vw]' src={img} alt="" />
           </div>
-          {/* <div className='border-[1px] mt-5 border-gray-400' ></div> */}
+          <div className='border-[1px] mt-5 border-[#8080804d]' ></div>
         </section>
        ))
       }

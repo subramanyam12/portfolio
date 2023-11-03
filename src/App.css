@@ -20,6 +20,11 @@
 .menuanimation {
   transition:height 500ms ease-out;
 }
+.menuanimation h1{
+  text-shadow: -3px 1px rgba(88, 88, 88, 0.514);
+  letter-spacing: 2px;
+  transition: opacity 200ms ease-out;
+}
 
 .menuanimation > :is(.image,nav){
   transition:opacity 400ms ease-out;

@@ -1,29 +1,16 @@
-import React,{useEffect,useRef,useContext} from 'react'
+import React from 'react'
 import {MdEmail} from 'react-icons/md'
 import {FaPhone} from 'react-icons/fa'
 import {TbBrandGithubFilled} from 'react-icons/tb'
 import {TiSocialLinkedin} from 'react-icons/ti'
 import {SiLeetcode} from 'react-icons/si'
 import Popup from './Popup'
-import { scrollvalue } from '../App'
+
 
 const Contact = () => {
-  
-  const {sethighlight} = useContext(scrollvalue)
-  const Contactref=useRef()
- 
-  
-  useEffect(()=>{
-      let child = Contactref.current.getBoundingClientRect()
-      Contactref.current.parentNode.addEventListener('scroll',()=>{
-        if(child.top<=0 && child.bottom >=0){
-          sethighlight('Contact')
-        }
-      })
-    },[])
 
   return (
-    <div ref={Contactref}>
+    <div>
       <h1 className='text-5xl max-sm:text-4xl font-bold'>Contact Details</h1>
       <div className='flex max-sm:w-[80vw] text-lg font-semibold flex-col gap-5 max-sm:gap-3 m-10 max-sm:m-7'>
         <span className='flex items-center gap-3'><MdEmail /> gsubramanyam933@gmail.com</span>
