@@ -25,7 +25,7 @@ const Navbar = () => {
     
     <div className={`w-[20%] z-20 menuanimation max-sm:fixed  left-0 top-0 flex flex-col max-sm:flex-row gap-6 max-sm:gap-0 items-center max-sm:justify-evenly py-10 max-sm:py-2 bg-[#E36858] h-full ${menuhide ? 'max-sm:h-16' : 'max-sm:h-[250px]'}  max-sm:w-full`}>
       <h1 className={`font-bold max-sm:block hidden absolute left-10 text-white text-3xl ${!menuhide && 'max-sm:opacity-0 max-sm:hidden'}`}>Portfolio</h1>
-        <div className={`w-[13vw] image ${menuhide ? 'max-sm:opacity-0' : 'max-sm:opacity-100'} max-sm:w-[40%] image p-2 aspect-square bg-[#f09c91] rounded-full cursor-pointer`}>
+        <div className={`w-[13vw] max-sm:cursor-default image ${menuhide ? 'max-sm:opacity-0' : 'max-sm:opacity-100'} max-sm:w-[40%] image p-2 aspect-square bg-[#f09c91] rounded-full cursor-pointer`}>
             <img className='w-full aspect-square object-cover bg-gray-300 rounded-full' src="subbu.jpg" alt="" />
         </div>
         <nav className={` ${menuhide ? 'max-sm:opacity-0 ' : 'max-sm:opacity-100'} relative w-full max-sm:w-32 flex flex-col items-center gap-1 text-xl max-sm:text-lg text-[#0C0D0D] font-semibold cursor-pointer max-sm:cursor-default`}>
@@ -35,7 +35,7 @@ const Navbar = () => {
              ))
          }
         </nav>
-        <div onClick={()=>setmenuhide(prev=>!prev)} className='absolute right-10 hidden max-sm:block -bottom-3 duration-300 cursor-pointer border-[1px] border-[#ebafa7dc] rounded-full bg-[#ee8d81] text-[#f8f8f8fa] text-4xl'>{!menuhide ? <IoIosArrowDropupCircle /> : <IoIosArrowDropdownCircle /> }</div>
+        <div onClick={()=>setmenuhide(prev=>!prev)} className='absolute max-sm:cursor-default right-10 hidden max-sm:block -bottom-3 duration-300 cursor-pointer border-[1px] border-[#ebafa7dc] rounded-full bg-[#ee8d81] text-[#f8f8f8fa] text-4xl'>{!menuhide ? <IoIosArrowDropupCircle /> : <IoIosArrowDropdownCircle /> }</div>
     </div>
 
 
