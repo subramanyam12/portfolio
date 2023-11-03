@@ -79,7 +79,7 @@ const Projects = () => {
                <div className='flex font-semibold max-sm:text-base items-center gap-2 '>
                  <TbWorldWww />
                  <a href={url} className='max-sm:hidden block' target='_blank'>{ url}</a>
-                 <a href={url} className='max-sm:block hidden' target='_blank'>{url.length>34 ? `${url.substring(0,34)}...`: url}</a>
+                 <a href={url} className='max-sm:block hidden max-sm:cursor-default' target='_blank'>{url.length>34 ? `${url.substring(0,34)}...`: url}</a>
                 </div>
             </div>
             <img className='rounded-2xl outline-2 outline-double outline-gray-400 shadow-lg object-cover w-[22vw] max-sm:w-[90vw] h-[12vw] max-sm:h-[50vw]' src={img} alt="" />
