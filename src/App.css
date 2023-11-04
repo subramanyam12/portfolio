@@ -64,10 +64,26 @@ body{
 
 @keyframes projectmove {
   from{
-    margin-top: 400px;
+    top: 400px;
     opacity: 0;
   }
   to{
-    margin-bottom: 0px;
+    top: 0px;
+    opacity: 100;
+  }
+}
+
+.educationanimate{
+  animation: educationmove 1000ms ease-out;
+}
+
+@keyframes educationmove {
+  from{
+    right: -400px;
+    opacity: 0;
+  }
+  to{
+    right: 0px;
+    opacity: 100;
   }
 }

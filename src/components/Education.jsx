@@ -2,7 +2,6 @@ import React,{useEffect,useRef,useContext} from 'react'
 import { scrollvalue } from '../App'
 
 const Education = () => {
-  
   const {sethighlight} = useContext(scrollvalue)
 
   const Educationref=useRef()
@@ -20,7 +19,7 @@ const Education = () => {
   return (
     <div ref={Educationref} className='flex flex-col gap-10'>
         <h1 className='text-5xl max-sm:text-4xl font-bold'>Education</h1>
-        <section className='flex text-gray-600 flex-col gap-2'>
+        <section className= 'flex text-gray-600 flex-col gap-2'>
             <h1 className='text-3xl max-sm:text-2xl text-gray-700 font-semibold'>Btech - Mechanical</h1>
             <span className='text-xl max-sm:text-lg'>YSR Engineering College of Yogi Vemana University , Proddutur , Andhra Pradesh .</span>
             <span className='text-lg max-sm:text-base' >GPA - <span className='text-gray-700 font-bold'>9.0</span></span>

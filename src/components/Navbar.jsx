@@ -31,7 +31,7 @@ const Navbar = () => {
         <nav className={` ${menuhide ? 'max-sm:opacity-0 ' : 'max-sm:opacity-100'} relative w-full max-sm:w-32 flex flex-col items-center gap-1 text-xl max-sm:text-lg text-[#0C0D0D] cursor-pointer max-sm:cursor-default`}>
          {
         menu.map((item,i)=>(
-            <div key={i} onClick={()=>clickhandler(i)} className={`py-1 w-full text-center  ${menuindex===i ? ' duration-500  rounded-xl font-bold text-white ': 'text-[#e9e7e6c2] max-sm:text-[#eeecebd3]'}`} >{item}</div>
+            <div key={i} onClick={()=>clickhandler(i)} className={`py-1 w-full text-center  ${menuindex===i ? ' duration-500  rounded-xl font-bold text-white ': 'text-[#e9e7e6c2] max-sm:text-[#f1efefd5]'}`} >{item}</div>
              ))
          }
         </nav>

@@ -3,14 +3,21 @@ import {TbWorldWww} from 'react-icons/tb'
 import { scrollvalue } from '../App'
 
 const Projects = () => {
+  
   const [projectanimebool, setprojectanimebool] = useState(false)
   const {sethighlight} = useContext(scrollvalue)
   const Projectref=useRef()
+  // const allrefs=project.map(()=>useRef(null))
+
   useEffect(()=>{
     Projectref.current.parentNode.addEventListener('scroll',()=>{
       let child = Projectref.current.getBoundingClientRect()
       setprojectanimebool(child.top<600)
-      console.log(child.top,child.bottom);
+     
+      // allrefs.forEach((curref,i)=>{
+      //   let childref = curref.current.getBoundingClientRect()
+      //   setprojectanimebool(projectanimebool=>({...projectanimebool,[i]:childref.top<1000}))
+      // })
       if(child.top>-1000 && child.top<=200 && child.bottom >=0){
         sethighlight('Projects')
       }else if(child.top<-500 && child.bottom <700){
@@ -18,6 +25,7 @@ const Projects = () => {
       }
     })
   },[])
+  
   
   const project=[
     {
@@ -68,12 +76,13 @@ const Projects = () => {
 
   ]
 
+  
 
   return (
     <div ref={Projectref} className='flex flex-col gap-5'>
       <h1 className='text-5xl max-sm:text-4xl font-bold'>Projects</h1>
       {project.map(({name,img,description,url},i)=>(
-        <section key={i} className={`${projectanimebool && 'projectanimate'}`}>
+        <section key={i} className={`relative ${projectanimebool && 'projectanimate'}`}>
           <h1 className='text-gray-800 text-2xl font-bold mb-3'>{name}</h1>
           <div className='flex max-sm:flex-col-reverse max-sm:gap-5 justify-between items-center'>
             <div className='text-gray-800 h-[20vh] max-sm:h-auto flex flex-col max-sm:gap-2 justify-evenly text-lg max-sm:text-[17px]'>
@@ -81,7 +90,7 @@ const Projects = () => {
                <div className='flex font-semibold max-sm:text-base items-center gap-2 '>
                  <TbWorldWww />
                  <a href={url} className='max-sm:hidden block' target='_blank'>{ url}</a>
-                 <a href={url} className='max-sm:block hidden max-sm:cursor-default' target='_blank'>{url.length>34 ? `${url.substring(0,34)}...`: url}</a>
+                 <a href={url} className='max-sm:block hidden max-sm:cursor-default' target='_blank'>{url.length>38 ? `${url.substring(0,38)}...`: url}</a>
                 </div>
             </div>
             <img className='rounded-2xl outline-2 outline-double outline-gray-400 shadow-lg object-cover w-[22vw] max-sm:w-[90vw] h-[12vw] max-sm:h-[50vw]' src={img} alt="" />
