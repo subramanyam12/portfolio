@@ -1,14 +1,16 @@
-import React,{useEffect,useRef,useContext} from 'react'
+import React,{useState,useEffect,useRef,useContext} from 'react'
 import {TbWorldWww} from 'react-icons/tb'
 import { scrollvalue } from '../App'
 
 const Projects = () => {
-
+  const [projectanimebool, setprojectanimebool] = useState(false)
   const {sethighlight} = useContext(scrollvalue)
   const Projectref=useRef()
   useEffect(()=>{
     Projectref.current.parentNode.addEventListener('scroll',()=>{
       let child = Projectref.current.getBoundingClientRect()
+      setprojectanimebool(child.top<600)
+      console.log(child.top,child.bottom);
       if(child.top>-1000 && child.top<=200 && child.bottom >=0){
         sethighlight('Projects')
       }else if(child.top<-500 && child.bottom <700){
@@ -71,10 +73,10 @@ const Projects = () => {
     <div ref={Projectref} className='flex flex-col gap-5'>
       <h1 className='text-5xl max-sm:text-4xl font-bold'>Projects</h1>
       {project.map(({name,img,description,url},i)=>(
-        <section key={i} className=''>
-          <h1 className='text-gray-700 text-2xl font-bold mb-3'>{name}</h1>
+        <section key={i} className={`${projectanimebool && 'projectanimate'}`}>
+          <h1 className='text-gray-800 text-2xl font-bold mb-3'>{name}</h1>
           <div className='flex max-sm:flex-col-reverse max-sm:gap-5 justify-between items-center'>
-            <div className='text-gray-700 h-[20vh] max-sm:h-auto flex flex-col max-sm:gap-2 justify-evenly text-lg max-sm:text-[17px]'>
+            <div className='text-gray-800 h-[20vh] max-sm:h-auto flex flex-col max-sm:gap-2 justify-evenly text-lg max-sm:text-[17px]'>
                <p className='w-[50vw]  indent-40 text-justify max-sm:w-full'>{description}</p>
                <div className='flex font-semibold max-sm:text-base items-center gap-2 '>
                  <TbWorldWww />

@@ -12,7 +12,7 @@ const Contact = () => {
   return (
     <div>
       <h1 className='text-5xl max-sm:text-4xl font-bold'>Contact Details</h1>
-      <div className='flex max-sm:w-[80vw] text-lg font-semibold flex-col gap-5 max-sm:gap-3 m-10 max-sm:m-7'>
+      <div className='flex max-sm:w-[80vw] text-lg text-gray-800 font-semibold flex-col gap-5 max-sm:gap-3 m-10 max-sm:m-7'>
         <span className='flex items-center gap-3'><MdEmail /> gsubramanyam933@gmail.com</span>
         <span className='flex items-center gap-3'><FaPhone /> 9398534218</span>
         <div className=' flex gap-10 max-sm:mt-10 justify-center'>

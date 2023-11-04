@@ -41,8 +41,7 @@ const Skills = () => {
          {
            skillsrange.map(({name,value},i)=>(
             <label className='' key={i}><span className='text-gray-700 text-xl font-bold'> {name} </span><br />
-                {/* <input className='w-[30vw]  asset max-sm:w-full' type='range' value={value} /> */}
-                <div className='w-[30vw] border-gray-400 border-[1px] mt-2 max-sm:w-full h-[14px] overflow-hidden bg-gray-100 rounded-full'>
+                <div className='w-[30vw] border-gray-400 border-[1px] mt-2 max-sm:w-full h-[14px] overflow-hidden bg-gray-300 rounded-full'>
                     <div className={`${value} ${rangebool && 'skillanimate'} h-full bg-blue-600`}></div>
                 </div>
             </label>

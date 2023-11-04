@@ -2,6 +2,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;1,300&display=swap');
 
+body{
+  background-image: linear-gradient(to top, #df89b5 0%, #bfd9fe 100%);
+}
+.navmenu{
+  background: linear-gradient(-225deg,rgba(0,0,0,0.25) 50%,transparent);
+
+}
+
 *{
   font-family: 'Josefin Sans', sans-serif;
 }
@@ -19,7 +27,7 @@
 }
 
 .content-scroll::-webkit-scrollbar-thumb{
-  background-color:rgba(167, 165, 165, 0.514);
+  background-color:rgba(114, 114, 114, 0.514);
   border-radius: 4px;
 }
 
@@ -47,5 +55,19 @@
   }
   to{
     width: auto-fit;
+  }
+}
+
+.projectanimate{
+  animation: projectmove 1000ms ease-out;
+}
+
+@keyframes projectmove {
+  from{
+    margin-top: 400px;
+    opacity: 0;
+  }
+  to{
+    margin-bottom: 0px;
   }
 }

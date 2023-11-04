@@ -17,7 +17,7 @@ const Content = () => {
   },[scroll])
 
   return (
-    <div ref={Contentref} className='w-[80%] max-sm:w-full pt-[30vh] max-sm:pt-[20vh] overflow-y-auto content-scroll font-serif flex flex-col gap-20 px-10 max-sm:pl-4 max-sm:pr-3 bg-[#f1d9ca]'>
+    <div ref={Contentref} className='w-[80%] max-sm:w-full pt-[30vh] max-sm:pt-[20vh] overflow-y-auto content-scroll font-serif flex flex-col gap-20 px-10 max-sm:pl-4 max-sm:pr-3 '>
        <About />
        <Education />
        <Skills />
