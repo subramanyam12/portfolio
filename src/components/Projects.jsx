@@ -29,6 +29,12 @@ const Projects = () => {
   
   const project=[
     {
+      name:'Musify',
+      img:'musify.jpeg',
+      description:"Its an music application in this i have used an jio Savaan(unofficial) API and we can listen songs of different artists, albums , playlists and also can add favourite songs .",
+      url:'https://subramanyam12.github.io/musify'
+    },
+    {
       name:'WEB CHAT',
       img:'webchat.jpeg',
       description:"Its a responsive single page application created using react , Django Api's \
