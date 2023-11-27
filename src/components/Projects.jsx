@@ -57,7 +57,7 @@ const Projects = () => {
     {
       name: 'E-commerce',
       img: 'ecommerce.jpeg',
-      description: "Its a simple Ecommerce responsive single page application developed in react with a Login System .In this application i have used an Public APi to show some real products along redux to manage State.",
+      description: "Its a simple Ecommerce responsive website developed in react with a Login System .In this application i have used an Public APi to show some real products along redux to manage State.",
       url: 'ecommerce',
       skills: 'react, javascript, django rest framework'
     },
