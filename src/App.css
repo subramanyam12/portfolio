@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;1,300&display=swap');
 
 body{
+  user-select: none;
   background-image: linear-gradient(to top, #df89b5 0%, #bfd9fe 100%);
 }
 .navmenu{
@@ -73,17 +74,42 @@ body{
   }
 }
 
-.educationanimate{
-  animation: educationmove 1000ms ease-out;
+
+
+.subcard:nth-child(1){top: 0%;left: 0%;}
+.subcard:nth-child(1):hover ~ .card{transform: rotateX(-15deg) rotateY(15deg);}
+
+.subcard:nth-child(2){top: 0%;left: 33.3333%;}
+.subcard:nth-child(2):hover ~ .card{transform: rotateX(-15deg) rotateY(0deg);}
+
+.subcard:nth-child(3){top: 0%;left: 66.6666%;}
+.subcard:nth-child(3):hover ~ .card{transform: rotateX(-15deg) rotateY(-15deg);}
+/* .subcard:nth-child(3):hover{transform: rotateX(-15deg) rotateY(-15deg);} */
+
+.subcard:nth-child(4){top: 33.3333%;left: 0%;}
+.subcard:nth-child(4):hover ~ .card{transform: rotateX(0deg) rotateY(15deg);}
+
+.subcard:nth-child(5){top: 33.3333%;left: 33.3333%;}
+.subcard:nth-child(5):hover ~ .card{transform: rotateX(0deg) rotateY(0deg);}
+
+.subcard:nth-child(6){top:33.3333%;left: 66.6666%;}
+.subcard:nth-child(6):hover ~ .card{transform: rotateX(0) rotateY(-15deg);}
+
+.subcard:nth-child(7){top: 66.6666%;left: 0%;}
+.subcard:nth-child(7):hover ~ .card{transform: rotateX(15deg) rotateY(15deg);}
+
+.subcard:nth-child(8){top: 66.6666%;left: 33.3333%;}
+.subcard:nth-child(8):hover ~ .card{transform: rotateX(15deg) rotateY(0deg);}
+
+.subcard:nth-child(9){top:  66.6666%;left:  66.6666%;}
+.subcard:nth-child(9):hover ~ .card{transform: rotateX(15deg) rotateY(-15deg);}
+
+
+.bottombox{
+  transform:translateZ(-1px);
+  transition: 500ms;
 }
 
-@keyframes educationmove {
-  from{
-    right: -400px;
-    opacity: 0;
-  }
-  to{
-    right: 0px;
-    opacity: 100;
-  }
+.container:hover .bottombox{
+  transform:translateZ(-1px) translateY(45px);
 }

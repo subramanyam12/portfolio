@@ -13,11 +13,11 @@ const About = () => {
   useEffect(()=>{
     let child = Aboutref.current.getBoundingClientRect()
   
-     Aboutref.current.parentNode.addEventListener('scroll',()=>{
-       if(child.top<=0 && child.bottom >=0){
-         sethighlight('About')
-       }
-     })
+    //  Aboutref.current.parentNode.addEventListener('scroll',()=>{
+    //    if(child.top<=0 && child.bottom >=0){
+    //      sethighlight('About')
+    //    }
+    //  })
     },[])
 
   return (
