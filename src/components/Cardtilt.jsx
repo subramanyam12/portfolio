@@ -18,8 +18,8 @@ const Cardtilt = ({name,description,image,skills,website}) => {
                         <span className='capitalize text-sm text-center font-thin line-clamp-2'>{skills}</span>
                     </div>
                     <div className='absolute bottom-[9px] right-[14px] flex gap-3 text-[#ffffffdf] text-3xl'>
-                       {website ==='blog-post' || website==='memory-gamer' ? null : <a  href={`https://subramanyam12.github.io/${website}`} className=''><TbWorldWww /></a>}
-                        <a href={`https://github.com/subramanyam12/${website}`} className='text-black bg-white rounded-full'><FaGithub /></a>  
+                       {website ==='blog-post' || website==='memory-gamer' ? null : <a  href={`https://subramanyam12.github.io/${website}`} target='_blank' className=''><TbWorldWww /></a>}
+                        <a href={`https://github.com/subramanyam12/${website}`} target='_blank' className='text-black bg-white rounded-full'><FaGithub /></a>  
                     </div>
                 </div>
                 <div style={{transform:'translateZ(10px)'}} className='flex internal flex-col gap-4 h-full w-full text-white' > 

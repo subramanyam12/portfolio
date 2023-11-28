@@ -13,10 +13,7 @@ const Projects = () => {
       let child = Projectref.current.getBoundingClientRect()
       setprojectanimebool(child.top < 600)
 
-      // allrefs.forEach((curref,i)=>{
-      //   let childref = curref.current.getBoundingClientRect()
-      //   setprojectanimebool(projectanimebool=>({...projectanimebool,[i]:childref.top<1000}))
-      // })
+    
       if (child.top > -1000 && child.top <= 200 && child.bottom >= 0) {
         sethighlight('Projects')
       } else if (child.top < -500 && child.bottom < 700) {
@@ -26,10 +23,12 @@ const Projects = () => {
     // let items = Projectref.current.children
     // const observer = new IntersectionObserver(entries=>{
     //   entries.forEach((entry,i)=>{
-    //     items[i].classList.toggle('projectanimate',entry.isIntersecting)
-    //     console.log(entry.isIntersecting);
+    //     console.log(entry);
+    //     entry.classList.toggle('projecttranslate',entry.isIntersecting)
+    //     // console.log(entry.isIntersecting);
     //   })
     // })
+ 
     // // console.log(Projectref.current.children);
     // for (let i=0; i<items.length; i++){
     //   observer.observe(items[i])
@@ -104,7 +103,7 @@ const Projects = () => {
 
 
   return (
-    <div ref={Projectref} className='flex flex-col gap-5'>
+    <div  ref={Projectref}  className='flex flex-col gap-5'>
       <h1 className=' text-5xl max-sm:text-4xl font-bold'>Projects</h1>
       <div className=' flex flex-wrap justify-evenly gap-10'>
         {project.map(({ name, img, description, url, skills }, i) => (
