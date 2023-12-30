@@ -54,6 +54,13 @@ const Projects = () => {
       skills: 'react, javascript, django,  django rest framework, python',
     },
     {
+      name: 'drawing - pad',
+      img: 'drawing-pad.png',
+      description: "  In this drawing board different users can sketch in the same board from different browers or tabs by creating a room with same room name with help of django with web sockets .",
+      url: 'websocket-drawing-pad',
+      skills: 'react, django-channels , web sockets'
+    },
+    {
       name: 'E-commerce',
       img: 'ecommerce.jpeg',
       description: "Its a simple Ecommerce responsive website developed in react with a Login System .In this application i have used an Public APi to show some real products along redux to manage State.",
