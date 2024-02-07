@@ -1,0 +1,333 @@
+.bg_pallet {
+    background: linear-gradient(to right, #010203, #07161b, #010204);
+}
+
+
+.bg_pallet::before {
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    box-shadow: 0 0 50px 50px #555b83, 0px 0px 80px 80px #34388a;
+    filter: blur(60px);
+}
+
+.bg_pallet::after {
+    content: '';
+    position: absolute;
+    top: 80%;
+    left: 70%;
+    box-shadow: 0 0 30px 30px #555b83, 0px 0px 50px 50px #34388a;
+    filter: blur(50px);
+}
+
+.icon_shadow {
+    box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.17) 0px -5px 5px 0px inset, rgba(0, 0, 0, 0.15) 0px -5px 5px 0px inset;
+}
+
+:root {
+    --origin-value: 0px;
+}
+
+
+.menu_bar::before {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.678);
+    animation: movebar 400ms ease-in-out;
+    transform-origin: var(--origin-value);
+}
+
+
+
+@keyframes movebar {
+    from {
+        transform: scaleX(0);
+    }
+
+    to {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes navwidth_anime {
+    from {
+        height: 0px;
+    }
+
+    to {
+        height: 194px;
+    }
+}
+
+.profession_name::before {
+    content: 'web developer';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.637), rgb(91, 222, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 1px solid rgb(91, 222, 255);
+    filter: drop-shadow(0 0 2px rgba(91, 222, 255, 0.527))drop-shadow(0 0 5px rgba(91, 222, 255, 0.288));
+    animation: profession_animate 6s 1s linear infinite;
+}
+
+@keyframes profession_animate {
+
+    0%,
+    10% {
+        width: 0%;
+    }
+
+    80%,
+    87%,
+    98% {
+        width: 100%;
+        border-right: 1px solid rgb(91, 222, 255);
+    }
+
+    81%,
+    90%,
+    100% {
+        border-right: none;
+    }
+
+
+}
+
+@keyframes rotate_skills {
+    to {
+        rotate: 360deg;
+    }
+}
+
+@keyframes rotate_skill0 {
+    to {
+        rotate: -360deg;
+    }
+}
+
+@keyframes rotate_skill1 {
+    from {
+        rotate: -51deg;
+    }
+
+    to {
+        rotate: -411deg;
+    }
+}
+
+@keyframes rotate_skill2 {
+    from {
+        rotate: -102deg;
+    }
+
+    to {
+        rotate: -462deg;
+    }
+}
+
+@keyframes rotate_skill3 {
+    from {
+        rotate: -153deg;
+    }
+
+    to {
+        rotate: -513deg;
+    }
+}
+
+@keyframes rotate_skill4 {
+    from {
+        rotate: -204deg;
+    }
+
+    to {
+        rotate: -564deg;
+    }
+}
+
+@keyframes rotate_skill5 {
+    from {
+        rotate: -255deg;
+    }
+
+    to {
+        rotate: -615deg;
+    }
+}
+
+@keyframes rotate_skill6 {
+    from {
+        rotate: -306deg;
+    }
+
+    to {
+        rotate: -666deg;
+    }
+}
+
+
+
+.contact_heading::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -25px;
+    left: -30px;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 0 50px rgba(255, 255, 255, 0.015), 0 0 0 100px rgba(255, 255, 255, 0.010);
+    border-radius: 50%;
+}
+
+
+
+.contact_phone::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 12px 12px 0 0;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.contact_phone::after {
+    content: '';
+    position: absolute;
+    top: -60px;
+    left: 10px;
+    width: 2px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.contact_email::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: -8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 0 0 12px 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media not all and (min-width: 640px) {
+
+    .contact_heading::before {
+        top: -35px;
+        left: -40px;
+    }
+
+    .contact_email::before {
+        top: 6px;
+    }
+}
+
+
+.scroll_none::-webkit-scrollbar {
+    width: 0px;
+}
+
+.subcard:nth-child(1) {
+    top: 0%;
+    left: 0%;
+}
+
+.subcard:nth-child(1):hover~.card {
+    transform: rotateX(-15deg) rotateY(15deg);
+}
+
+.subcard:nth-child(2) {
+    top: 0%;
+    left: 33.3333%;
+}
+
+.subcard:nth-child(2):hover~.card {
+    transform: rotateX(-15deg) rotateY(0deg);
+}
+
+.subcard:nth-child(3) {
+    top: 0%;
+    left: 66.6666%;
+}
+
+.subcard:nth-child(3):hover~.card {
+    transform: rotateX(-15deg) rotateY(-15deg);
+}
+
+.subcard:nth-child(4) {
+    top: 33.3333%;
+    left: 0%;
+}
+
+.subcard:nth-child(4):hover~.card {
+    transform: rotateX(0deg) rotateY(15deg);
+}
+
+.subcard:nth-child(5) {
+    top: 33.3333%;
+    left: 33.3333%;
+}
+
+.subcard:nth-child(5):hover~.card {
+    transform: rotateX(0deg) rotateY(0deg);
+}
+
+.subcard:nth-child(6) {
+    top: 33.3333%;
+    left: 66.6666%;
+}
+
+.subcard:nth-child(6):hover~.card {
+    transform: rotateX(0) rotateY(-15deg);
+}
+
+.subcard:nth-child(7) {
+    top: 66.6666%;
+    left: 0%;
+}
+
+.subcard:nth-child(7):hover~.card {
+    transform: rotateX(15deg) rotateY(15deg);
+}
+
+.subcard:nth-child(8) {
+    top: 66.6666%;
+    left: 33.3333%;
+}
+
+.subcard:nth-child(8):hover~.card {
+    transform: rotateX(15deg) rotateY(0deg);
+}
+
+.subcard:nth-child(9) {
+    top: 66.6666%;
+    left: 66.6666%;
+}
+
+.subcard:nth-child(9):hover~.card {
+    transform: rotateX(15deg) rotateY(-15deg);
+}
+
+
+.bottombox {
+    transform: translateZ(-1px);
+    transition: 500ms;
+}
+
+.container:hover .bottombox {
+    transform: translateZ(-1px) translateY(45px);
+}
