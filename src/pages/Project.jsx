@@ -48,7 +48,7 @@ const project = [
         name: 'E-commerce',
         img: 'ecommerce.jpeg',
         description: "this is a simple Ecommerce responsive website developed with a Login System .\
-        In this application i have used an Public APi to show some real products and also used redux to manage State globally.",
+        In this application i have used an Public API to show some real products and also used redux to manage State globally.",
         url: 'ecommerce',
         skills: 'react, javascript, django rest framework'
     },
