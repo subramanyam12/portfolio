@@ -4,7 +4,7 @@ import { Link, useLocation } from 'react-router-dom'
 
 const MENU = ["home", 'about', 'education', 'projects', 'contact']
 const Navbar = () => {
-    let path = location.pathname.split('/')[1]
+    let path = location.hash.split('#/')[1]
     const [selectedMenu, setselectedMenu] = useState(path ? path : 'home')
     const [clicked, setClicked] = useState(false)
     const currlocation = useLocation()

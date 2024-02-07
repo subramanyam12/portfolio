@@ -24,7 +24,7 @@ const Cardtilt = ({ name, description, image, skills, website }) => {
                 <div style={{ transform: 'translateZ(15px)' }} className='flex internal flex-col gap-4 h-full w-full text-white' >
                     <h1 className='text-2xl relative top-2 font-bold'>{name}</h1>
                     <div className='duration-500' >
-                        <img className='duration-500 w-full aspect-[2/1.3] rounded-xl' src={image} alt={name} />
+                        <img className='duration-500 w-full aspect-[2/1.3] rounded-xl' src={`https://subramanyam12.github.io/portfolio/${image}`} alt={name} />
                     </div>
                     <p className=' text-sm text-justify font-[100]'>{description}</p>
                 </div>
