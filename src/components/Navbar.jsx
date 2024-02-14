@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
-import Heimbergmenu from './Heimbergmenu'
 import { Link, useLocation } from 'react-router-dom'
+
+import Heimbergmenu from './Heimbergmenu'
 
 const MENU = ["home", 'about', 'education', 'projects', 'contact']
 const Navbar = () => {

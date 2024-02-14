@@ -1,7 +1,8 @@
 import React from 'react'
+import { Route, Routes } from 'react-router-dom'
+
 import Header from './Header'
 import Home from '../pages/Home'
-import { Route, Routes } from 'react-router-dom'
 import About from '../pages/About'
 import Education from '../pages/Education'
 import Project from '../pages/Project'

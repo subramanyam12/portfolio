@@ -2,6 +2,7 @@ import React from 'react'
 import { PiGithubLogoFill } from "react-icons/pi";
 import { FaLinkedinIn } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
+
 import Navbar from './Navbar';
 
 const ICONS = [[PiGithubLogoFill, 'github.com/subramanyam12', 'black', 'white'], [FaLinkedinIn, 'linkedin.com/in/ganta-subramanyam', 'white', '#0068c2'], [SiLeetcode, 'leetcode.com/siddu143s', 'orange', 'rgba(255,255,255,0.2)']]

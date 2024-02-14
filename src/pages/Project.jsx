@@ -47,7 +47,7 @@ const project = [
     {
         name: 'E-commerce',
         img: 'ecommerce.jpeg',
-        description: "this is a simple Ecommerce responsive website developed with a Login System .\
+        description: "This is a simple Ecommerce responsive website developed with a Login System .\
         In this application i have used an Public API to show some real products and also used redux to manage State globally.",
         url: 'ecommerce',
         skills: 'react, javascript, django rest framework'
@@ -55,37 +55,36 @@ const project = [
     {
         name: 'Image-editor',
         img: 'imagefilter.jpeg',
-        description: "this is created in react by using this application we can add filters to images like contrast ,blur \
+        description: "This is created in react by using this application we can add filters to images like contrast ,blur \
         ,brightness ,saturation and also we can rotate images ,then after filtering we can download the edited Image.",
         url: 'imagefilter',
         skills: 'react, javascript'
     },
     {
-
         name: 'Tic Tac Toe',
         img: 'tic-tac-toe.jpeg',
-        description: "this is created in react, In this both needs to play in same tab to play tic tac tac game  , there is no oppenent like AI bot.",
+        description: "This is created in react, In this both needs to play in same tab to play tic tac tac game  , there is no oppenent like AI bot.",
         url: 'tic-tac-toe',
         skills: 'react, javascript'
     },
     {
         name: 'Memory Gamer',
         img: 'memory-gamer.png',
-        description: "this is a simple memory game you need to match all the double emojis that are shown randomly on the grid.",
+        description: "This is a simple memory game you need to match all the double emojis that are shown randomly on the grid.",
         url: 'memory-gamer',
         skills: 'react, javascript'
     },
     {
         name: 'Music player',
         img: 'mobile-music-player.jpeg',
-        description: "this is a simple mobile design music player where we can listen our required songs.",
+        description: "This is a simple mobile design music player where we can listen our required songs.",
         url: 'mobile-music-player',
         skills: 'react, javascript'
     },
     {
         name: 'Blog Post',
         img: 'blogpost.png',
-        description: "this is a blog post application where we can add , delete and update the blog post and also have a token based login system using django API.",
+        description: "This is a blog post application where we can add , delete and update the blog post and also have a token based login system using django API.",
         url: 'blog-post',
         skills: 'react, javascript, django rest framework'
     }
