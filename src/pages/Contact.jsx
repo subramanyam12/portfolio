@@ -9,7 +9,7 @@ const Contact = () => {
             <footer className='z-20 text-lg max-sm:text-sm font-semibold'>
                 <span className='relative contact_phone '>
                     <MdLocalPhone className='inline text-2xl mr-4 max-sm:mr-3' />
-                    9398534218
+                    7329027835 || 9398534218
                 </span>
                 <br />
                 <span className='relative contact_email'>
